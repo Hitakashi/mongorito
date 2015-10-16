@@ -32,7 +32,8 @@
     "lib"
   ],
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "postinstall": "cd node_modules/monk/node_modules/mongodb && npm uninstall bson && cd ../../; cd node_modules/mongodb && npm uninstall bson"
     },
   "repository": {
     "type": "git",
